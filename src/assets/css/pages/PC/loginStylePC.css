@@ -1,0 +1,101 @@
+.root{
+  background: url("../../../../../static/picture/login.jpg") no-repeat;
+  background-size: 100% 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 80%;
+}
+.login_title{
+  height: 4%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 150%;
+}
+.main{
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+}
+.login_main{
+  width: 30%;
+  height: 100%;
+  background: white;
+  border-radius: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login_main_content{
+  width: 80%;
+  height: 70%;
+}
+.login_main_row{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login_main_row_text{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #515a6e;
+}
+.login_phone_input{
+  width: 75%;
+  margin-left: 5%;
+  height: 40%;
+  border: #dcdee2 solid 1px;
+  border-radius: 3px;
+  padding-left: 10px;
+}
+.login_phone_input::placeholder{
+  color: #dcdee2;
+  font-size: 90%;
+}
+.login_check_input{
+  width: 50%;
+  margin-left: 5%;
+  height: 40%;
+  border: #dcdee2 solid 1px;
+  border-radius: 3px;
+  padding-left: 10px;
+}
+.login_check_input::placeholder{
+  color: #dcdee2;
+  font-size: 90%;
+}
+.login_check_send{
+  width: 25%;
+  height: 40%;
+  border: transparent;
+  border-radius: 3px;
+  background: #2d8cf0;
+  color: white;
+  font-size: 90%;
+}
+.login_main_button{
+  background: #2d8cf0;
+  color: white;
+  width: 100%;
+  height: 45%;
+  border: transparent;
+  border-radius: 3px;
+}
+.login_tip{
+  height: 10%;
+  width: 100%;
+  color: #888;
+  display: flex;
+  justify-content: center;
+  font-size: 50%;
+}
