@@ -7,8 +7,8 @@ import Switch from '@/pages/switchSchool'
 import Apply from '@/pages/apply'
 import Test from '@/pages/test'
 import Login from '@/pages/login'
-import ReleaseGoods from '@/pages/release_goods'
-import ReleaseBuy from '@/pages/release_buy'
+import Release from '@/pages/release'
+
 
 
 Vue.use(Router)
@@ -56,15 +56,9 @@ export default new Router({
     },
     {
       // 发布商品
-      path:'/release_goods',
-      name:'ReleaseGoods',
-      component:ReleaseGoods
-    },
-    {
-      // 发布求购
-      path:'/release_buy',
-      name:'ReleaseBuy',
-      component:ReleaseBuy
+      path:'/release',
+      name:'Release',
+      component:Release
     },
     {
       path:'/test',
