@@ -33,7 +33,7 @@
       methods:{
         init:function() {
           let Width = window.screen.availWidth;
-          if(Width>600){
+          if(Width>1200){
             require("../assets/css/components/PC/tailStylePC.css");
           }
           else {

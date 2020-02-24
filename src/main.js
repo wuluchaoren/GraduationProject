@@ -6,11 +6,13 @@ import router from './router'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import domain from './global'
+import axios from 'axios'
 
 Vue.config.productionTip = false;
 
 Vue.use(ElementUI);
 
+Vue.prototype.$axios = axios;
 global.domain=domain;
 
 /* eslint-disable no-new */
@@ -18,7 +20,7 @@ new Vue({
   el: '#app',
   router,
   created(){
-    // axios.defaults.baseURL='http://u64x96.natappfree.cc'
+     // axios.defaults.baseURL='http://www.leeyum.com'
   },
   components: { App },
   template: '<App/>'
