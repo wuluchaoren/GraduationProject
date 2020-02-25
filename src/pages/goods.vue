@@ -1,33 +1,36 @@
 <template>
   <div id="root">
     <my-head default-active="2"/>
-    <div class="goods_main">
-      <div class="goods_header">
-        <div class="goods_header_left">
+    <div class="adjust">
+      <div class="goods_main">
+        <div class="goods_header">
+          <div class="goods_header_left">
 
+          </div>
+          <div class="goods_header_right">
+            <el-carousel :interval="5000" arrow="always" height="400px">
+              <el-carousel-item v-for="item in carousel_list" :key="item">
+                <img :src="item" alt="" style="height: 100%;width: 100%;"/>
+              </el-carousel-item>
+            </el-carousel>
+          </div>
         </div>
-        <div class="goods_header_right">
-          <el-carousel :interval="5000" arrow="always" height="400px">
-            <el-carousel-item v-for="item in carousel_list" :key="item">
-              <img :src="item" alt="" style="height: 100%;width: 100%;"/>
-            </el-carousel-item>
-          </el-carousel>
+        <div class="goods_tag">
+          <div v-for="item in tags" class="goods_tag_item">{{item}}</div>
         </div>
-      </div>
-      <div class="goods_tag">
-        <div v-for="item in tags" class="goods_tag_item">{{item}}</div>
-      </div>
-      <div class="goods_order">
-        <div>时间</div>
-        <div>价格</div>
-        <div>浏览量</div>
-      </div>
-      <div class="goods_content">
-        <div class="goods_item_list">123</div>
-        <div class="goods_item_list">123</div>
-        <div class="goods_item_list">123</div>
-        <div class="goods_item_list">123</div>
-        <div class="goods_item_list">123</div>
+        <div class="goods_order">
+          <div>时间</div>
+          <div>价格</div>
+          <div>浏览量</div>
+        </div>
+        <div class="goods_content">
+          <div class="goods_item_list">123</div>
+          <div class="goods_item_list">123</div>
+          <div class="goods_item_list">123</div>
+          <div class="goods_item_list">123</div>
+          <div class="goods_item_list">123</div>
+        </div>
+
       </div>
     </div>
     <tail/>
@@ -86,10 +89,16 @@
 </script>
 
 <style scoped>
+
+
+  .adjust{
+    width:1200px;
+    min-height: 80%;
+    margin: 0 auto;
+  }
   .goods_main{
-    width: 85%;
+    width: 100%;
     min-height: 70%;
-    margin-left: 7.5%;
   }
   .goods_header{
     height: 400px;

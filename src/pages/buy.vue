@@ -1,6 +1,6 @@
 <template>
   <div id="root">
-    <my-head default-active="3"></my-head>
+    <my-head default-active="3"/>
     <div class="buy_main">
       <div v-for="item in buy_list" class="buy_main_item">
         <div class="buy_item_user">
@@ -218,10 +218,11 @@
   }
   .more{
     border: transparent;
-    background: white;
+    background: transparent;
     cursor: pointer;
     width: 100%;
     height: 50px;
     color: #888888;
+    /*color: white;*/
   }
 </style>

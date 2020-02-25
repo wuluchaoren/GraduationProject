@@ -11,35 +11,27 @@
       text-color="#222222"
     >
       <el-menu-item index="1" @click="jump('Home')">首页</el-menu-item>
-      <el-menu-item index="2" @click="jump('Goods')">二手</el-menu-item>
+      <el-menu-item index="2" @click="jump('Goods')">发现</el-menu-item>
       <el-menu-item index="3" @click="jump('Buy')">求购</el-menu-item>
-      <el-menu-item index="4" @click="jump('Switch')">切换学校</el-menu-item>
+<!--      <el-menu-item index="4" @click="jump('Switch')">切换学校</el-menu-item>-->
 <!--      <el-menu-item index="5">校园动态</el-menu-item>-->
-      <el-submenu index="6">
-        <template slot="title">更多</template>
-        <el-menu-item index="6-1" style="padding-left: 10%" @click="dialogVisible = true">兼职</el-menu-item>
-        <el-menu-item index="6-2" style="padding-left: 10%" @click="dialogVisible = true">优惠券</el-menu-item>
-        <el-menu-item index="6-3" style="padding-left: 10%" @click="dialogVisible = true">加入我们</el-menu-item>
-      </el-submenu>
+<!--      <el-submenu index="6">-->
+<!--        <template slot="title">更多</template>-->
+<!--        <el-menu-item index="6-1" style="padding-left: 10%" @click="dialogVisible = true">兼职</el-menu-item>-->
+<!--        <el-menu-item index="6-2" style="padding-left: 10%" @click="dialogVisible = true">优惠券</el-menu-item>-->
+<!--        <el-menu-item index="6-3" style="padding-left: 10%" @click="dialogVisible = true">加入我们</el-menu-item>-->
+<!--      </el-submenu>-->
     </el-menu>
+    <div class="search-div">
+      <div class="search_main">
+        <input class="search-input" placeholder="发现你想要的"/>
+        <div class="search-button">
+          <el-icon name="search"/></div>
+      </div>
+    </div>
     <div class="back">
-      <el-menu
-        :default-active="active2"
-        class="el-menu-demo"
-        mode="horizontal"
-        background-color="#ffffff"
-        style="border-bottom: transparent;"
-        active-text-color="#409EFF"
-        text-color="#222222"
-      >
-        <el-menu-item index="1" @click="dialogVisible = true">APP</el-menu-item>
-        <el-submenu index="2">
-          <template slot="title">发布</template>
-          <el-menu-item index="2-1" style="padding-left: 10%" @click="jump('ReleaseGoods')">发布商品</el-menu-item>
-          <el-menu-item index="2-2" style="padding-left: 10%" @click="jump('ReleaseBuy')">发布求购</el-menu-item>
-        </el-submenu>
-        <el-menu-item index="3" @click="jump('Apply')">开通学校</el-menu-item>
-      </el-menu>
+      <div class="application" @click="dialogVisible = true">APP</div>
+      <div class="release-button" @click="jump('Release')">我要发布</div>
       <div class="login">
         <img src="../../static/picture/about_pic.jpg" alt="" style="height: 70%;margin-right: 10px;"/>
         <div class="login_button" @click="jump('Login')">登录</div>

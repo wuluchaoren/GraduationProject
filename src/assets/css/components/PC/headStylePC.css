@@ -1,18 +1,62 @@
 .myHead{
   height: 7%;
-  width: 100%;
+  width: 1300px;
   display: flex;
   align-items: center;
   position: relative;
+  margin: 0 auto;
 }
 .logo{
   height: 80%;
-  margin-left: 2%;
   margin-right: 2%;
   cursor:pointer
 }
+.search-div{
+  height: 100%;
+  width: 40%;
+  margin-left: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search_main{
+  width: 100%;
+  height: 50%;
+  border: 1px solid rgba(64,158,255,0.6);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+.search-input{
+  margin-left: 3%;
+  width: 77%;
+  height: 90%;
+  background: transparent;
+  border: transparent;
+}
+.search-input::placeholder{
+  color: #cdcdcd;
+  font-size: 100%;
+}
+
+.search-button{
+  width: 20%;
+  background: rgba(64,158,255,0.6);
+  height: 100%;
+  border-radius: 0 13px 13px 0;
+  color: white;
+  font-size: 120%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.search-button:hover{
+  background: #409EFF;
+}
+
 .login{
-  width: 25%;
+  width: 35%;
   height: 80%;
   color: #222222;
   font-size: 85%;
@@ -21,6 +65,10 @@
   align-items: center;
   cursor:pointer
 }
+.login:hover{
+  color: #409EFF;
+  transition: all .15s;
+}
 .back{
   display: flex;
   align-items: center;
@@ -28,7 +76,34 @@
   position: absolute;
   right: 0;
   height: 80%;
+  width: 25%;
+  color:#222222;
+}
+.application{
   width: 30%;
+  height: 100%;
+  font-size: 90%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.application:hover{
+  color: #409EFF;
+  transition: all .15s;
+}
+.release-button{
+  width: 35%;
+  height: 100%;
+  font-size: 90%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.release-button:hover{
+  color: #409EFF;
+  transition: all .15s;
 }
 .cancel_button{
   border: transparent;
